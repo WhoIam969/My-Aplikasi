@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="welcome_to_my_apps">Welcome to my apps</string>
+    <string name="logo">logo</string>
+    <string name="kata">kata</string>
+    <string name="kata_2">kata_2</string>
+    <string name="mulai">mulai</string>
+    <string name="helo">helo</string>
+</resources>

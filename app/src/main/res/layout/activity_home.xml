@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageButton
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/poto"
+        android:layout_marginTop="38sp"
+        android:layout_marginEnd="60sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription">
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/helo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/helo"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="55sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/helo" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/kata_"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="110sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription">
+
+    </ImageView>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cyber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/matkul"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="190sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/BasisData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/matkul2"
+                android:layout_marginStart="1sp"
+                android:layout_marginTop="190sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/cyber1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/matkul"
+                android:layout_marginStart="1sp"
+                android:layout_marginTop="190sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/kelas_khusus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/kelas_khusus"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="410sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ScrollView
+        android:layout_width="358dp"
+        android:layout_height="255dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/kelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/matkul3"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/kelas1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/matkul3"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/kelas2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/matkul3"
+                tools:ignore="ContentDescription" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="670dp"
+        android:src="@drawable/bg_toolbar"
+        tools:ignore="ContentDescription" />
+
+    <ImageSwitcher
+        android:id="@+id/home"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_editor_absoluteX="53dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <ImageSwitcher
+        android:id="@+id/cari"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_editor_absoluteX="53dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="141dp" />
+
+    <ImageSwitcher
+        android:id="@+id/chat"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_editor_absoluteX="53dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="230dp" />
+
+    <ImageSwitcher
+        android:id="@+id/profile"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_editor_absoluteX="53dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="324dp" />
+
+</android.support.constraint.ConstraintLayout>
